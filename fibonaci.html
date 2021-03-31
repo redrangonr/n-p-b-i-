@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonaci(){
+        var num = parseInt(prompt("nhập giá trị của num"))
+        var a = 1, b = 0, temp;
+
+        while (num >= 0){
+            temp = a;
+            a = a + b;
+            b = temp;
+            num--;
+        }
+        if(num===a || num ===b){
+           return true
+        }else{
+            return false
+        }
+    }
+isFibonaci()
+
+</script>
+</body>
+</html>

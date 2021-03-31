@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function findmax(arr) {
+        if (arr.length == 0) {
+            alert("nhập lại mảng")
+        }
+        var max = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i]
+            }
+        }
+        return max
+
+    }
+
+    let max = findmax(arr)
+    if (max == false) {
+        alert("mảng rỗng")
+    } else {
+        alert("giá trị max" + max)
+    }
+
+</script>
+</body>
+</html>
